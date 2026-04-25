@@ -84,7 +84,7 @@
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #697386;
+        color: var(--text);
         margin: 24px 0 16px;
         font-weight: 700;
         display: flex;
@@ -205,7 +205,7 @@
         font-size: 15px;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 1020px) {
         .main-layout {
           grid-template-columns: 1fr;
         }
@@ -219,7 +219,7 @@
     <div class="app-container">
       <header>
         <div class="h1">Estate SmartCalc</div>
-        <h1>Аренда или покупка квартиры — что выбрать в 2026 году.</h1>
+        <h1>Аренда или покупка квартиры — что выбрать в 2026 году</h1>
         <p>
           Анализ капитала на дистанции <span id="displayYears">12</span> лет
         </p>
@@ -227,7 +227,7 @@
 
       <div class="main-layout">
         <div class="config-panel">
-          <div class="group-title">🏠 В собственность</div>
+          <div class="group-title">🏠 Покупка</div>
 
           <div class="input-box">
             <label>Стоимость жилья</label>
@@ -248,7 +248,7 @@
             </div>
           </div>
 
-          <div class="group-title">📊 В аренду</div>
+          <div class="group-title">📊 Аренда</div>
           <div class="input-box">
             <label>Стоимость аренды</label>
             <input type="text" id="rent" value="65 000" />
