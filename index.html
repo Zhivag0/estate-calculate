@@ -316,6 +316,13 @@
     </div>
 
     <script>
+      function singleVibration() {
+        if (navigator.vibrate) {
+          navigator.vibrate(200); // вибрировать 200 мс
+        } else {
+          console.log("Vibration API не поддерживается вашим браузером");
+        }
+      }
       const fmt = (v) => Math.round(v).toLocaleString("ru-RU") + " ₽";
       const parse = (v) => Number(String(v).replace(/\s/g, "")) || 0;
 
@@ -420,7 +427,7 @@
       document.querySelectorAll('input[type="number"]').forEach((input) => {
         input.addEventListener("input", calculate);
       });
-
+      singleVibration();  
       calculate();
     </script>
   </body>
